@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&display=swap')
+
+@media screen and ( min-width: 700px )
+    .task
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        align-items: start
+
+.task__item
+    position: relative
+    width: 90%
+    border-radius: 1px
+    margin: auto
+    padding: 5px
+    background: #eeeeee
+    margin-bottom: 20px
+    font-family: 'Kumbh Sans'
+
+.task__markers
+    position: absolute
+    text-align: center
+    display: flex
+    left: -13px
+    top: -13px
+.task__title
+    font-size: 1.2em
+    margin: 10px 0
+    background: #ffffff
+    box-shadow: 0px 1px 0 #999
+    padding: 3px
+    border-radius: 3px
+    transition: .3s
+    &:hover
+        cursor: pointer
+        background: #efefef
+.task__description
+    max-height: 95px
+    min-height: 95px
+    overflow: hidden
+    margin-bottom: 10px
+.task__dates
+.task__canceled:hover
+    cursor: pointer
+.task__canceled
+    position: absolute
+    top: -10px
+    right: -10px
+    width: 20px
+    height: 20px
+    background-color: #ccc
+    border-radius: 20px
+    line-height: 24px
+    font-size: 14px
+    text-align: center
+    cursor: pointer
+.task__marks
+    display: flex
+    overflow: hidden
+    align-items: center
+    span.mark
+        font-size: 1em
